@@ -114,8 +114,8 @@ export function CredentialsSection({
           <div className="grid grid-cols-1 overflow-hidden rounded-lg border border-slate-200 bg-white lg:grid-cols-12">
             {/* Radar Canvas */}
             <div className="flex flex-col justify-between border-b border-slate-200 p-6 lg:col-span-7 lg:border-r lg:border-b-0">
-              <div className="h-[340px] w-full">
-                <ResponsiveContainer width="100%" height="100%">
+              <div className="h-[340px] w-full min-w-0">
+                <ResponsiveContainer width="100%" height={340} minWidth={0}>
                   <RadarChart cx="50%" cy="50%" outerRadius="72%" data={COMPETENCY_DATA}>
                     <PolarGrid stroke="#CBD5E1" strokeDasharray="2 2" />
                     <PolarAngleAxis
