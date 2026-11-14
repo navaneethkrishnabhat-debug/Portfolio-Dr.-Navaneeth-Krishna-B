@@ -28,7 +28,7 @@ This project includes a preconfigured GitHub Actions workflow (`.github/workflow
 ## Local Development
 
 ```bash
-npm install
+npm install --legacy-peer-deps
 npm run dev
 ```
 
